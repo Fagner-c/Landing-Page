@@ -399,4 +399,12 @@ to{
     border-radius: 10px;
     padding: 30px;
 }
+.rodape h5{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    padding-top: 15%;
+    animation: animap 10s ease infinite alternate;
+}
+.r
 }
