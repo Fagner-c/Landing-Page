@@ -359,7 +359,7 @@ body{
     display: none;
 }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 460px){
 .cabecalho{
     display: none;
 }
@@ -376,7 +376,7 @@ body{
     height: 400px;
     width: 300px;
     border: 1px solid #FF2978;
-    border-radius: 11px;
+    border-radius: 10px;
     padding: 30px;
 }
 }
