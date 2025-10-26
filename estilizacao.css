@@ -379,7 +379,7 @@ to{
     display: none;
 }
 }
-@media screen and (max-width: 460px){
+@media screen and (max-width: 500px){
 .cabecalho{
     display: none;
 }
