@@ -169,11 +169,11 @@ body{
     width: 50%;
 }
 .rodape{
-    animation: anima 10s ease infinite reverse;
+    animation: animar 10s ease infinite alternate;
     width: 100%;
     margin-top: 5%;
     height: 200px;
-    background: linear-gradient(-45deg, #FF2978, #9b043c, #180f4a, #090422, black) no-repeat;
+    background: linear-gradient(-45deg, #FF2978, #ff005d, #180f4a, #090422, black) no-repeat;
     text-align: center;
     background-size: 300% 300%;
 }
@@ -183,21 +183,28 @@ body{
     color: whitesmoke;
     padding-top: 3%;
     margin: 40px 0px 0px 0px;
+    animation: animap 10s ease infinite alternate;
 }
 .rodape p{
     font-size: 15px;
     color: whitesmoke;
+    animation: animap 10s ease infinite alternate;
 }
 
-@keyframes anima{
-0%{
+@keyframes animar{
+from{
     background-position: 0% 50%;
 }
-50%{
+to{
     background-position: 100% 50%;
 }
-100%{
-    background-position: 0% 50%;
+}
+@keyframes animap{
+from{
+    color: #FF2978;
+}
+to{
+    color: #180f4a;
 }
 }
 
