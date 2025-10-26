@@ -359,3 +359,24 @@ body{
     display: none;
 }
 }
+@media screen and (max-width: 460px) {
+.cabecalho{
+    display: none;
+}
+.secao2-conteudo section{
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    padding: 30px;
+}
+.secao2-conteudo section:hover{
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    padding: 30px;
+}
+}
