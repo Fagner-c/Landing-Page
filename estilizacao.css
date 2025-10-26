@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.cabecalho{
+    width: 100%;
+    background-color: snow;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu{
+    flex: 80%;
+    text-align: right;
+    padding: 20px;
+}
+.titulo_site{
+    margin-left: 10%;
+    text-align: left;
+    flex: 20%;
+}
+.titulo_site h1{
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 34px;
+}
+.titulo_site h1:hover{
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 35px;
+}
+.barra-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color: #180f4a;
+}
+.barra-nav a:hover{
+    text-decoration:overline;
+    font-size: 21px;
+    padding: 20px;
+    color: #FF2978;
+}
+#botao_contato{
+    padding: 10px 25px;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #180f4a;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+#botao_contato:hover{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: whitesmoke;
+    border-radius:10px;
+    background-color: #FF2978;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.secao1{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+
+}
+.secao1-texto{
+    flex: 40%;
+    margin-left: 10%;
+}
+.secao1-texto h2{
+    font-weight: 900;
+    font-size: 70px;
+    color: #180f4a;
+    margin: 0%;
+    padding: 0%;
+}
+.secao1-texto p{
+    color: gray;
+    margin-bottom: 8%;
+}
+.secao1-texto a{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: whitesmoke;
+    border-radius:5px;
+    background-color: #FF2978;
+}
+.secao1-texto a:hover{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: whitesmoke;
+    border-radius:5px;
+    background-color: #180f4a;
+}
+.secao1-img{
+    flex: 40%;
+    margin-right: 10%;
+}
+.secao2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.secao2-titulo{
+    text-align: center;
+    color: #180f4a;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+}
+.secao2-conteudo{
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+}
+.secao2-conteudo section{
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    margin: 5%;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    padding: 30px;
+}
+.secao2-conteudo section:hover{
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    margin: 5%;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #FF2978;
+    color: whitesmoke;
+}
+.secao2-conteudo section:hover .visible{
+    display: none;
+}
+.secao2-conteudo section .invisible{
+    display: none;
+}
+.secao2-conteudo section:hover .invisible{
+    display: block;
+}
+.invisible img{
+    margin-top: 10%;
+    width: 50%;
+}
+.redes{
+    align-items: center;
+    display: flex;
+}
+.redes a{
+    flex: 33%;
+    margin-top: 10%;
+}
+.redes img{
+    width: 70%;
+}
+#insta{
+    width: 50%;
+}
+.rodape{
+    width: 100%;
+    border-top: 5px solid #FF2978;
+    margin-top: 5%;
+    height: 200px;
+    background-image: linear-gradient(180deg, #180f4a, #090422, black);
+    text-align: center;
+    align-items: center;
+}
+.rodape h5{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 0px;
+    margin: 40px 0px 0px 0px;
+}
+.rodape p{
+    font-size: 15px;
+    color: whitesmoke;
+}
+@media screen and (max-width: 1060px) {
+  .redes{
+    align-items: center;
+    display: flex;
+}
+.redes a{
+    flex: 33%;
+    margin-top: 10%;
+}
+.redes img{
+    margin-top: 50%;
+    width: 100%;
+}
+}
+@media screen and (max-width: 930px) {
+.secao2{
+    margin-top: 10%;
+}
+.secao2-conteudo{
+    justify-items: center;
+    width: 80%;
+    display: block
+}
+.secao2-conteudo section{
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    padding: 30px;
+}
+.invisible img{
+    width: 35%;
+}
+.redes{
+    align-items: center;
+    display: flex;
+}
+.redes a{
+    flex: 33%;
+    margin-top: 0%;
+}
+.redes img{
+    margin-top: 2%;
+    width: 40%;
+}
+#insta{
+    width: 30%;
+}
+}
+@media screen and (max-width: 860px) {
+.cabecalho{
+    width: 100%;
+    background-color: snow;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu{
+    flex: 80%;
+    text-align: right;
+}
+.titulo_site{
+    margin-left: 10%;
+    text-align: left;
+    flex: 20%;
+}
+.titulo_site h1{
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 25px;
+}
+.titulo_site h1:hover{
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 30px;
+}
+.barra-nav a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    color: #180f4a;
+}
+.barra-nav a:hover{
+    text-decoration:overline;
+    font-size: 16px;
+    padding: 10px;
+    color: #FF2978;
+}
+#botao_contato{
+    padding: 10px 15px;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #180f4a;
+    margin-right: 15%;
+    margin-left: 1%;
+}
+#botao_contato:hover{
+    text-decoration: none;
+    padding: 12px 16px;
+    color: whitesmoke;
+    border-radius:10px;
+    background-color: #FF2978;
+    margin-right: 15%;
+    margin-left: 1%;
+}
+.secao1{
+    align-items: center;
+    margin-right: 8%;
+    margin-top: 5%;
+}
+.secao1-texto{
+    text-align: center;
+}
+.secao1-texto h2{
+    font-weight: 900;
+    font-size: 70px;
+    color: #180f4a;
+    margin: 5%;
+    padding: 0%;
+}
+.secao1-texto p{
+    color: gray;
+    margin-bottom: 8%;
+}
+.secao1-texto a{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: whitesmoke;
+    border-radius:5px;
+    background-color: #FF2978;
+}
+.secao1-texto a:hover{
+    text-decoration: none;
+    padding: 12px 28px;
+    color: whitesmoke;
+    border-radius:5px;
+    background-color: #180f4a;
+}
+.secao1-img{
+    display: none;
+}
+}
+@media screen and (max-width: 610px) {
+.titulo_site{
+    margin-left: 10%;
+    text-align: left;
+    flex: 20%;
+}
+.titulo_site h1{
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 20px;
+}
+
+.barra-nav a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #180f4a;
+    margin-right: 5%;
+}
+.barra-nav a:hover{
+    text-decoration:overline;
+    font-size: 13px;
+    color: #FF2978;
+}
+#botao_contato{
+    display: none;
+}
+}
