@@ -169,25 +169,38 @@ body{
     width: 50%;
 }
 .rodape{
+    animation: anima 10s ease infinite reverse;
     width: 100%;
-    border-top: 5px solid #FF2978;
     margin-top: 5%;
     height: 200px;
-    background-image: linear-gradient(180deg, #180f4a, #090422, black);
+    background: linear-gradient(-45deg, #FF2978, #9b043c, #180f4a, #090422, black) no-repeat;
     text-align: center;
-    align-items: center;
+    background-size: 300% 300%;
 }
 .rodape h5{
     font-family: 'Lobster', cursive;
     font-size: 30px;
     color: whitesmoke;
-    padding: 0px;
+    padding-top: 3%;
     margin: 40px 0px 0px 0px;
 }
 .rodape p{
     font-size: 15px;
     color: whitesmoke;
 }
+
+@keyframes anima{
+0%{
+    background-position: 0% 50%;
+}
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0% 50%;
+}
+}
+
 @media screen and (max-width: 1060px) {
   .redes{
     align-items: center;
